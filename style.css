@@ -12,11 +12,19 @@ FONT SIZE SYSTEM (px)
   box-sizing: border-box;
 }
 
+/* 
+MAIN COLOR: #087F5B 
+GREY: #343A40
+
+*/
+
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
   font-family: 'Inter', sans-serif;
+  color: #343A40;
+  border-bottom: 8px solid #087F5B;
 }
 
 .container {
@@ -39,6 +47,32 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link, 
+.btn:visited {
+background-color: #087F5B;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 500;
+
+display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
@@ -92,6 +126,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087F5B;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -147,6 +184,8 @@ h3 {
 }
 
 footer {
+
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
 }
